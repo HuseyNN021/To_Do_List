@@ -43,7 +43,7 @@ btn_sort.addEventListener('click',()=>{
    }
    console.log(array);
 })
-btn_sort.addEventListener('click',()=>{
+btn_remove.addEventListener('click',()=>{
     event.preventDefault();
     let array=[];
    const td_list=document.querySelectorAll('.td_List');
