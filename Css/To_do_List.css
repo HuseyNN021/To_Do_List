@@ -1,0 +1,106 @@
+body{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+.container{
+    width: 690px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colm-4{
+    border: 1px solid gray;
+    width: calc(100% * 6/12);
+    height: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-radius: 10px;
+    background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+}
+
+.headsec{
+    height: 28px;
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input{
+    border-radius: 10px;
+    width: 280px;
+    height: 40px;
+    border: 1px solid gray;
+    outline: none;
+    box-sizing: border-box;
+    padding: 10px;
+}
+input:hover{
+    background-color: rgb(146, 221, 205);
+    padding: 5px;
+}
+.delete{
+    border-radius: 50%;
+}
+
+.submit-btn{
+    width: 150px;
+    height: 42px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 19px;
+    border-radius: 10px;
+}
+
+table{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+}
+
+tr{
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+.td_button{
+    background-color: blueviolet;
+    border-radius: 10px;
+    padding: 5px;
+}
+.td_button:hover{
+    background-color: red;
+}
+.btn_sort{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
+.btn_remove{
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+}
