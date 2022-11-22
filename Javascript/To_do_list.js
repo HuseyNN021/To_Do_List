@@ -2,15 +2,12 @@ const body=document.querySelector('body')
 const form=document.querySelector('form');
 const tbody=document.querySelector('tbody');
 const colm_4=document.querySelector('.colm-4');
-const btn_sort=document.createElement('button');
-const btn_remove=document.createElement('button');
-btn_sort.classList.add('btn_sort');
-btn_remove.classList.add('btn_remove');
-colm_4.append(btn_sort);
-colm_4.append(btn_remove);
-btn_sort.innerText='>';
-btn_remove.innerText='<';
+const btn_up=document.querySelector('.sekil1')
+const btn_down=document.querySelector('.sekil2')
 form.addEventListener('submit',(event)=>{
+    if(event.target.username.value.length==0){
+        alert('Input daxil edin')
+    }else{
     event.preventDefault();
     const tr=document.createElement('tr');
     tbody.append(tr);
@@ -26,8 +23,9 @@ form.addEventListener('submit',(event)=>{
     td_btn.addEventListener('click',()=>{
         tr.remove();
     })
+}
 })
-btn_sort.addEventListener('click',()=>{
+btn_up.addEventListener('click',()=>{
     event.preventDefault();
     let array=[];
    const td_list=document.querySelectorAll('.td_List');
@@ -43,7 +41,7 @@ btn_sort.addEventListener('click',()=>{
    }
    console.log(array);
 })
-btn_remove.addEventListener('click',()=>{
+btn_down.addEventListener('click',()=>{
     event.preventDefault();
     let array=[];
    const td_list=document.querySelectorAll('.td_List');
@@ -59,3 +57,4 @@ btn_remove.addEventListener('click',()=>{
    }
    console.log(array);
 })
+
